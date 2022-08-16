@@ -127,7 +127,7 @@ SiteVerificationTag = "XYZabc"
 [[menu.main]]
 identifier = "projets"
 name = "🚀 Projets"
-url = "/projets/"
+url = "projets"
 weight = 1
 
 [[menu.main]]
