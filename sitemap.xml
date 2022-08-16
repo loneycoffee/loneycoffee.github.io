@@ -2,10 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tomt.fr/projets/</loc>
+    <lastmod>2022-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tomt.fr/</loc>
+    <lastmod>2022-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tomt.fr/projets/notion-discord-bot/</loc>
+    <lastmod>2022-08-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://tomt.fr/categories/</loc>
   </url><url>
     <loc>https://tomt.fr/tags/</loc>
-  </url><url>
-    <loc>https://tomt.fr/</loc>
   </url>
 </urlset>
