@@ -40,11 +40,11 @@ showtoc = false
 tocopen = false
 
   [params.assets]
-  favicon = "images/pp-modified.png"
-  favicon16x16 = "<link / abs url>"
-  favicon32x32 = "<link / abs url>"
-  apple_touch_icon = "<link / abs url>"
-  safari_pinned_tab = "<link / abs url>"
+  favicon = "/images/pp-modified.png"
+  favicon16x16 = "/images/favicon16x16.png"
+  favicon32x32 = "/images/favicon32x32.png"
+  apple_touch_icon = "/images/apple_touch_icon.png"
+  safari_pinned_tab = "/images/apple_touch_icon.png"
 
   [params.label]
   text = "Théo M."
