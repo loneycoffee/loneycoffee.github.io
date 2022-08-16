@@ -30,7 +30,7 @@ ShowBreadCrumbs = true
 ShowCodeCopyButtons = false
 ShowWordCount = false
 ShowRssButtonInSectionTermList = false
-UseHugoToc = true
+UseHugoToc = false
 disableSpecial1stPost = false
 disableScrollToTop = false
 comments = false
@@ -124,23 +124,30 @@ SiteVerificationTag = "XYZabc"
   minMatchCharLength = 0
   keys = [ "title", "permalink", "summary", "content" ]
 
+
+[[menu.main]]
+identifier = "home"
+name = "🏠"
+url = ""
+weight = 1
+
 [[menu.main]]
 identifier = "projets"
 name = "🚀 Projets"
 url = "projets"
-weight = 1
+weight = 2
 
 [[menu.main]]
 identifier = "towdev"
 name = "☕️ TowDev"
 url = "https://tdev.fr"
-weight = 2
+weight = 3
 
 [[menu.main]]
 identifier = "polytech"
 name = "📕 Polytech"
 url = "https://cours.tomt.fr"
-weight = 3
+weight = 4
 
 [markup.highlight]
 noClasses = false
