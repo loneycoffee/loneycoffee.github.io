@@ -1,0 +1,144 @@
+baseURL: "https://tomt.fr"
+title: Théo M.
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Théo M.
+  description: "Site de Théo M."
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Théo
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: light # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "images/pp-modified.png"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Théo M."
+    icon: /images/pp-modified.png
+    iconHeight: 50
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: Théo M.
+    subtitle: "Etudiant ingénieur de 19 ans passionné par l'informatique."
+    imageUrl: "images/pp-modified.png"
+    imageWidth: 200
+    imageHeight: 200
+    imageTitle: pp 
+    buttons:
+      - name: 🚀 Projets
+        url: projets
+      - name: ☕️ TowDev
+        url: "https://tdev.fr"
+      - name: 📕 Polytech
+        url: "https://cours.tomt.fr"
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: email
+      url: "mailto:towdev@proton.me"
+    - name: linkedin
+      url: "https://linkedin.com/in/to-mt"
+    - name: twitter
+      url: "https://twitter.com/towdev"
+    - name: instagram
+      url: "https://instagram.com/towdev"
+    - name: github
+      url: "https://github.com/towdev"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: projets 
+      name: 🚀 Projets
+      url: /projets/
+      weight: 1
+    - identifier: towdev
+      name: ☕️ TowDev
+      url: "https://tdev.fr"
+      weight: 2
+    - identifier: polytech
+      name: 📕 Polytech
+      url: "https://cours.tomt.fr"
+      weight: 3
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai

@@ -1,0 +1,146 @@
+baseURL = "https://loneycoffee.github.io"
+title = "Théo M."
+paginate = 5
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+googleAnalytics = "UA-123-45"
+pygmentsUseClasses = true
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "Théo M."
+description = "Site de Théo M."
+keywords = [ "Blog", "Portfolio", "PaperMod" ]
+author = "Théo"
+images = [ "<link or path of image for opengraph, twitter-cards>" ]
+DateFormat = "January 2, 2006"
+defaultTheme = "light"
+disableThemeToggle = false
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = false
+ShowRssButtonInSectionTermList = false
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+  [params.assets]
+  favicon = "images/pp-modified.png"
+  favicon16x16 = "<link / abs url>"
+  favicon32x32 = "<link / abs url>"
+  apple_touch_icon = "<link / abs url>"
+  safari_pinned_tab = "<link / abs url>"
+
+  [params.label]
+  text = "Théo M."
+  icon = "/images/pp-modified.png"
+  iconHeight = 50
+
+  [params.profileMode]
+  enabled = true
+  title = "Théo M."
+  subtitle = "Etudiant ingénieur de 19 ans passionné par l'informatique."
+  imageUrl = "images/pp-modified.png"
+  imageWidth = 200
+  imageHeight = 200
+  imageTitle = "pp"
+
+    [[params.profileMode.buttons]]
+    name = "🚀 Projets"
+    url = "projets"
+
+    [[params.profileMode.buttons]]
+    name = "☕️ TowDev"
+    url = "https://tdev.fr"
+
+    [[params.profileMode.buttons]]
+    name = "📕 Polytech"
+    url = "https://cours.tomt.fr"
+
+  [params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = "Welcome to my blog"
+
+  [[params.socialIcons]]
+  name = "email"
+  url = "mailto:towdev@proton.me"
+
+  [[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/to-mt"
+
+  [[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/towdev"
+
+  [[params.socialIcons]]
+  name = "instagram"
+  url = "https://instagram.com/towdev"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/towdev"
+
+[params.analytics.google]
+SiteVerificationTag = "XYZabc"
+
+[params.analytics.bing]
+SiteVerificationTag = "XYZabc"
+
+[params.analytics.yandex]
+SiteVerificationTag = "XYZabc"
+
+  [params.cover]
+  hidden = false
+  hiddenInList = false
+  hiddenInSingle = false
+
+  [params.editPost]
+  URL = "https://github.com/<path_to_repo>/content"
+  Text = "Suggest Changes"
+  appendFilePath = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = [ "title", "permalink", "summary", "content" ]
+
+[[menu.main]]
+identifier = "projets"
+name = "🚀 Projets"
+url = "/projets/"
+weight = 1
+
+[[menu.main]]
+identifier = "towdev"
+name = "☕️ TowDev"
+url = "https://tdev.fr"
+weight = 2
+
+[[menu.main]]
+identifier = "polytech"
+name = "📕 Polytech"
+url = "https://cours.tomt.fr"
+weight = 3
+
+[markup.highlight]
+noClasses = false
