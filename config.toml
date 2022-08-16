@@ -62,7 +62,7 @@ tocopen = false
 
     [[params.profileMode.buttons]]
     name = "🚀 Projets"
-    url = "projets"
+    url = "/projets"
 
     [[params.profileMode.buttons]]
     name = "☕️ TowDev"
