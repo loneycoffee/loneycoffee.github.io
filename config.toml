@@ -85,6 +85,10 @@ tocopen = false
   url = "https://linkedin.com/in/to-mt"
 
   [[params.socialIcons]]
+  name = "discord"
+  url = "https://discord.com/users/312290080838647809/"
+
+  [[params.socialIcons]]
   name = "twitter"
   url = "https://twitter.com/towdev"
 
