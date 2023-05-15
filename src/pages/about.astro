@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Théo" description="About Théo :)">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About Me"
+				tagline="Read below to learn more about myself and my background."
+			>
+				
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>Self-taught 20-year-old who has been curious and passionate about computer science since childhood. </p>
+					<p>I enjoy discovering new fields and learning new things every day :)</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<p>2023 - 2026 | Polytech Nantes : IT Engineer with AI & Data specializations</p>
+					<p>2021 - 2023 | Polytech Lille : Preparatory Classes for Polytech Schools</p>
+	
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<h2 class="section-title">💻 Coding </h2>
+					<p>→ Python : Experimented ~ +3 years of experience (Usage of diverses librairies : Django, Openpyxl, ...)</p>
+					<p>→ Javascript : Beginner ~ <2 months (school courses)</p>
+					<p>→ C : Beginner ~ <2 months (school courses) </p>
+					<p>→ HTML/CSS : Beginner (school courses)
+					<h2 class="section-title">📊 Data </h2>
+					<p>→ SQL</p>
+					<p>→ Power BI</p>
+					<h2 class="section-title">🔧 Ops </h2>
+					<p>→ Linux </p> 
+					<p>→ Git</p>
+					<p>→ Docker</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
