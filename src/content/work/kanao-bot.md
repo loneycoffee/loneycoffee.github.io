@@ -19,7 +19,7 @@ This bot had over 1.5k discord servers and a lot of utilities features such as m
 Furthermore, it had been verified by discord.
 
 This project was coded in Python using for the first version of the project the library discord.py.
-For the second version i've used the libray hikari and lightbulb because the discord.py wasn't updated.
+For the second version i've used the libraries hikari and lightbulb because the discord.py wasn't updated.
 
 You can still check the [website](https://kanao.netlify.app/) and the reviews on [top.gg](https://top.gg/bot/703221711826452550).
 

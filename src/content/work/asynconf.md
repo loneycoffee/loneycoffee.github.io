@@ -9,9 +9,9 @@ tags:
   - Dev
 ---
 
-I'm a staff member of the Asynconf event since 3 years.
+I'm a staff member of the Asynconf event for more than 3 years.
 
 During these 3 years I've helped in different ways. For instance, I've participated in the creation of algorithm exercises.
 Furthermore, I was a jury and a moderator on the event.
 
-You can check the [website](https://asynconf.fr) of the event.
+You can check the [YT channel](https://www.youtube.com/@Asynconf) and the [website](https://asynconf.fr) of the event.
