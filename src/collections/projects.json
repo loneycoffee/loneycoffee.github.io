@@ -1,38 +1,20 @@
 [
-	{
-		"name": "TempMail.Best",
-		"description": "Best Temporary Email.",
-		"image": "/assets/images/projects/tempmail.best.png",
-		"url": "https://tempmail.best"
-	},
-	{
-		"name": "DNS.Surf",
-		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
-		"image": "/assets/images/projects/dns.surf.png",
-		"url": "https://dns.surf"
-	},
-	{
-		"name": "HTML.ZONE",
-		"description": "Web Toolbox.",
-		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://html.zone"
-	},
-	{
-		"name": "Sink",
-		"description": "A Simple / Speedy / Secure Link Shortener with Analytics.",
-		"image": "/assets/images/projects/sink.cool.png",
-		"url": "https://sink.cool"
-	},
-	{
-		"name": "BroadcastChannel",
-		"description": "Turn your Telegram Channel into a MicroBlog.",
-		"image": "/assets/images/projects/broadcast-channel.png",
-		"url": "https://github.com/ccbikai/BroadcastChannel"
-	},
-	{
-		"name": "L(O*62).ONG",
-		"description": "Make your URL looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooonger",
-		"image": "/assets/images/projects/long.png",
-		"url": "https://loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.ong"
-	}
+  {
+    "name": "Zed + Devenv.nix = Magic !",
+    "description": "My config files for a cool dev env.",
+    "image": "/assets/images/projects/devenv.png",
+    "url": "https://github.com/loneycoffee/zed-nix-cfg"
+  },
+  {
+    "name": "Polyhashcode 2023",
+    "description": "Challenge project.",
+    "image": "/assets/images/projects/cuphead.jpg",
+    "url": "https://github.com/loneycoffee/polyhashcode2023"
+  },
+  {
+    "name": "Kanao - Discord Bot (Archived)",
+    "description": "My main discord bot project. (2020 - 2022).",
+    "image": "/assets/images/projects/bot.jpg",
+    "url": "https://kanao.netlify.app/"
+  }
 ]
