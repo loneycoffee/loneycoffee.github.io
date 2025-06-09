@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/post.astro
-title: Terraform
+title: Terraform 🛠️
 description: wip
 dateFormatted: June 9, 2025
 ---

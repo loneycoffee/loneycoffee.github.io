@@ -1,5 +1,4 @@
 ---
-import Button from "../components/button.astro";
 import Projects from "../components/home/projects.astro";
 import Separator from "../components/home/separator.astro";
 import Writings from "../components/home/writings.astro";
@@ -18,7 +17,7 @@ import Layout from "../layouts/main.astro";
           Hello, I'm Théo !
         </h1>
         <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-          A 22yo French DevOps Cloud Developer apprentice :)
+          A 22-year-old French DevOps Cloud Developer apprentice ☕
         </p>
         <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
           I can help you out with:
@@ -33,10 +32,11 @@ import Layout from "../layouts/main.astro";
           <li>and more...</li>
         </ul>
       </div>
+
       <div
-        class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
+        class="card-container relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
       >
-        <div class="relative z-50 w-full">
+        <div class="card relative rounded-full z-50 w-full">
           <div
             class="absolute bottom-0 z-40 w-16 h-16 -translate-x-6 -translate-y-1/2 lg:top-auto top-0 lg:-translate-y-[330px] rounded-full"
           >
@@ -49,18 +49,17 @@ import Layout from "../layouts/main.astro";
               >
             </span>
           </div>
-                    <div class="relative z-30 px-0">
-                      <img
-                        src="/assets/images/pp.png"
-                        loading="eager"
-                        decoding="auto"
-                        class="relative z-30 w-full aspect-[994/846] md:max-w-md mx-auto dark:-translate-y-0.5"
-                      />
-                    </div>
+          <div class="rounded-full relative z-30 px-0">
+            <img
+              src="/assets/images/pp.png"
+              loading="eager"
+              decoding="auto"
+              class="relative z-30 w-full aspect-[994/846] md:max-w-md mx-auto dark:-translate-y-0.5"
+            />
+          </div>
           <div
             class="absolute bottom-0 right-0 z-20 w-full h-full lg:h-[420px] translate-x-0 -translate-y-px border border-dashed rounded-2xl bg-gradient-to-r dark:from-neutral-950 dark:via-black dark:to-neutral-950 from-white via-neutral-50 to-white border-neutral-300 dark:border-neutral-700"
-          >
-          </div>
+          ></div>
         </div>
       </div>
     </div>
@@ -71,3 +70,61 @@ import Layout from "../layouts/main.astro";
   <Separator text="Some of my writing" />
   <Writings />
 </Layout>
+
+---
+
+<style>
+  /*
+    CSS for the 3D Card Effect
+    Applied to the .card-container and .card elements
+  */
+  .card-container {
+    perspective: 1000px; /* Creates the illusion of depth */
+  }
+
+  .card {
+    transform-style: preserve-3d; /* Ensures children are positioned in 3D space */
+    transition: transform 0.2s ease-out; /* Smooth transition for the tilt effect */
+  }
+
+  /* Optional: Add a subtle shadow on hover for a nicer effect */
+  .card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  }
+</style>
+
+<script>
+  // Client-side JavaScript for interactivity
+  // The client:load directive ensures this script runs after the component is rendered.
+  // We use client:load as the script directly interacts with DOM elements.
+
+  const cardContainer = document.querySelector(".card-container");
+  const card = document.querySelector(".card");
+
+  // Only proceed if both elements are found
+  if (cardContainer && card) {
+    cardContainer.addEventListener("mousemove", (e) => {
+      // Get the bounding rectangle of the card container
+      const rect = cardContainer.getBoundingClientRect();
+
+      // Calculate the mouse position relative to the center of the card container
+      // This helps in tilting the card from its center
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+
+      // Calculate the rotation values
+      // Divided by 10 to control the intensity of the tilt. Adjust this value for more or less tilt.
+      // Negative 'y' for 'rotateX' makes the tilt feel natural (mouse down = card tilts up)
+      const rotateY = x / 10;
+      const rotateX = -y / 10;
+
+      // Apply the transform to the .card element
+      card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+
+    // Reset the card to its original position when the mouse leaves the container
+    cardContainer.addEventListener("mouseleave", () => {
+      card.style.transform = "rotateX(0deg) rotateY(0deg)";
+    });
+  }
+</script>

@@ -1,6 +1,8 @@
 ---
 import experiences from "../collections/experiences.json";
+import education from "../collections/education.json";
 import AboutExperience from "../components/about-experience.astro";
+import AboutEducation from "../components/about-education.astro";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
 ---
@@ -18,15 +20,15 @@ import Layout from "../layouts/main.astro";
         <p
           class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
         >
-                          ☁️ DevOps Engineer, ☕ Coffee Enthusiast, 🎮 Relaxed Gamer & 🍳 Amateur Chef
+                          ☁️ DevOps Engineer ~ ☕ Coffee Enthusiast ~ 🎮 Relaxed Gamer ~ 🍳 Amateur Chef
         </p>
 
     <h2
       class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
     >
-      Experience
+      💼 Experience
     </h2>
-    <div class="px-5 py-10">
+    <div class="px-5 py-5">
       {
         experiences.map((experience) => {
           return (
@@ -43,7 +45,28 @@ import Layout from "../layouts/main.astro";
         })
       }
     </div>
-
+    <h2
+          class="text-2xl font-bold dark:text-neutral-200"
+        >
+          🎓 Education
+        </h2>
+        <div class="px-5 py-5">
+          {
+            education.map((experience) => {
+              return (
+                <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
+                  <AboutEducation
+                    dates={experience.dates}
+                    specialization={experience.specialization}
+                    school={experience.school}
+                    description={experience.description}
+                    logo={experience.logo}
+                  />
+                </div>
+              )
+            })
+          }
+        </div>
     <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Let's Connect</h2>
         <p
           class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
