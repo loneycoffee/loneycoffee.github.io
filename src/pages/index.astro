@@ -104,27 +104,34 @@ import Layout from "../layouts/main.astro";
   // Only proceed if both elements are found
   if (cardContainer && card) {
     cardContainer.addEventListener("mousemove", (e) => {
-      // Get the bounding rectangle of the card container
-      const rect = cardContainer.getBoundingClientRect();
+      // Ensure the event is a MouseEvent to access clientX and clientY
+      if (e instanceof MouseEvent) {
+        // Get the bounding rectangle of the card container
+        const rect = cardContainer.getBoundingClientRect();
 
-      // Calculate the mouse position relative to the center of the card container
-      // This helps in tilting the card from its center
-      const x = e.clientX - rect.left - rect.width / 2;
-      const y = e.clientY - rect.top - rect.height / 2;
+        // Calculate the mouse position relative to the center of the card container
+        // This helps in tilting the card from its center
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
 
-      // Calculate the rotation values
-      // Divided by 10 to control the intensity of the tilt. Adjust this value for more or less tilt.
-      // Negative 'y' for 'rotateX' makes the tilt feel natural (mouse down = card tilts up)
-      const rotateY = x / 10;
-      const rotateX = -y / 10;
+        // Calculate the rotation values
+        // Divided by 10 to control the intensity of the tilt. Adjust this value for more or less tilt.
+        // Negative 'y' for 'rotateX' makes the tilt feel natural (mouse down = card tilts up)
+        const rotateY = x / 10;
+        const rotateX = -y / 10;
 
-      // Apply the transform to the .card element
-      card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        // Apply the transform to the .card element
+        if (card instanceof HTMLElement) {
+          card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        }
+      }
     });
 
     // Reset the card to its original position when the mouse leaves the container
     cardContainer.addEventListener("mouseleave", () => {
-      card.style.transform = "rotateX(0deg) rotateY(0deg)";
+      if (card instanceof HTMLElement) {
+        card.style.transform = "rotateX(0deg) rotateY(0deg)";
+      }
     });
   }
 </script>
