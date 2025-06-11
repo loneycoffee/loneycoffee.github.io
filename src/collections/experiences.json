@@ -4,20 +4,23 @@
     "role": "DevOps Cloud Developer Apprentice",
     "company": "EDF - Nantes, France",
     "description": "• Creating and deploying Python applications in AWS cloud using CI/CD tools.",
-    "logo": "/assets/images/experiences/edf.ico"
+    "logo": "/assets/images/experiences/edf.ico",
+    "link": "https://www.edf.fr"
   },
   {
     "dates": "June 2024 · August 2024",
     "role": "Full Stack Developer",
     "company": "Leagues.gg - Copenhagen, Denmark",
     "description": "• Helped in the improvement of the platform and managed different POCs and meetings.",
-    "logo": "/assets/images/experiences/leagues.ico"
+    "logo": "/assets/images/experiences/leagues.ico",
+    "link": "https://www.leagues.gg"
   },
   {
     "dates": "June 2022 · July 2022",
     "role": "Full Stack Developer",
     "company": "ONI - Arras, France",
     "description": "• Created a web interface using Django framework and a Power BI report that allows to monitor the evolution of rules defined by the user on a Microsoft SQL Server database.",
-    "logo": "/assets/images/experiences/oni.ico"
+    "logo": "/assets/images/experiences/oni.ico",
+    "link": "https://www.ordre-infirmiers.fr/"
   }
 ]
