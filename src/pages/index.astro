@@ -11,11 +11,14 @@ import Layout from "../layouts/main.astro";
     <div class="flex flex-col items-center md:flex-row">
       <div class="relative w-full md:w-1/2">
         <h1
-          class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
+          class="mb-3 text-3xl font-bold leading-tight md:text-3xl lg:text-4xl dark:text-white"
         >
           Hello, I'm Théo !
         </h1>
-        <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
+        <p class="mb-2 text-lg font-semibold text-neutral-800 dark:text-neutral-200">
+          I'm a <span id="typewriter" style="color: #7b5ea7;"></span><span class="typewriter-cursor">|</span>
+        </p>
+        <p class="mb-6 text-sm text-neutral-600 dark:text-neutral-400">
           23 y/o French DevOps Engineer with a Full Stack background and a strong interest in Generative AI. Seeking a V.I.E position in Spain or LATAM, starting Q1 2027 ☕
         </p>
         <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
@@ -71,6 +74,19 @@ import Layout from "../layouts/main.astro";
 ---
 
 <style>
+  /* Typewriter cursor blink */
+  .typewriter-cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: currentColor;
+    margin-left: 1px;
+    animation: blink 0.75s step-end infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
   /*
     CSS for the 3D Card Effect
     Applied to the .card-container and .card elements
@@ -94,6 +110,48 @@ import Layout from "../layouts/main.astro";
   // Client-side JavaScript for interactivity
   // The client:load directive ensures this script runs after the component is rendered.
   // We use client:load as the script directly interacts with DOM elements.
+
+  // Typewriter animation
+  const words = [
+    "DevOps Engineer ☁️",
+    "Full Stack Developer 💻",
+    "Generative AI Enthusiast 🤖",
+    "Coffee Lover ☕",
+    "Amateur Chef 🍳",
+    "Traveller ✈️",
+    "Open Source Fan 🛠️",
+  ];
+  const el = document.getElementById("typewriter");
+  if (el) {
+    let wordIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    const type = () => {
+      const current = words[wordIndex];
+      if (deleting) {
+        charIndex--;
+        el.textContent = current.slice(0, charIndex);
+        if (charIndex === 0) {
+          deleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          setTimeout(type, 400);
+          return;
+        }
+        setTimeout(type, 40);
+      } else {
+        charIndex++;
+        el.textContent = current.slice(0, charIndex);
+        if (charIndex === current.length) {
+          deleting = true;
+          setTimeout(type, 1800);
+          return;
+        }
+        setTimeout(type, 80);
+      }
+    };
+    type();
+  }
 
   const cardContainer = document.querySelector(".card-container");
   const card = document.querySelector(".card");
