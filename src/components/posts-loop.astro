@@ -4,7 +4,7 @@ const allPosts = await getCollection("post");
 
 const { count } = Astro.props;
 
-function parseDate(dateStr) {
+function parseDate(dateStr: string) {
   const [month, day, year] = dateStr.split(" ");
   return new Date(`${month} ${parseInt(day)}, ${year}`);
 }
@@ -19,7 +19,7 @@ const sortedPosts = allPosts
 const postsLoop = sortedPosts.slice(0, count).map((post) => {
   return {
     ...(post.data || {}),
-    link: `/post/${post.slug}`,
+    link: `/post/${post.id}`,
   };
 });
 ---
