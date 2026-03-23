@@ -1,18 +1,26 @@
 [
   {
-    "dates": "October 2023 · Present",
-    "specialization": "Msc. in Computing Science, Artificial Intelligence and Data Engineering",
+    "dates": "2023 · 2026",
+    "specialization": "Msc. in Computing Science, AI and Data Engineering",
     "school": "Polytech Nantes - Nantes, France",
-    "description": "• 3-year apprenticeship training.",
+    "description": "• 3-year apprenticeship training.\n• Courses: Data Science, Software Development, DevOps, Generative AI, OOP, Project Management (Agile), Team Management.",
     "logo": "/assets/images/education/polytech.ico",
     "link": "https://polytech.univ-nantes.fr/"
   },
   {
-    "dates": "September 2021 · May 2023",
+    "dates": "2021 · 2023",
     "specialization": "Bachelor of Engineering",
     "school": "Polytech Lille - Lille, France",
-    "description": "• Intensive two-year university preparation courses for the Polytech School Network.",
+    "description": "• Two-year generalist engineering preparation covering Mathematics, Physics, Computer Science and core engineering fundamentals — passed with high honours.",
     "logo": "/assets/images/education/polytech.ico",
     "link": "https://www.polytech-lille.fr/"
+  },
+  {
+    "dates": "2018 · 2021",
+    "specialization": "High School Diploma",
+    "school": "France",
+    "description": "• Majors in Computer Science and Mathematics, English-language European section — first class honours.",
+    "logo": "",
+    "link": ""
   }
 ]

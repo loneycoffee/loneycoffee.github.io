@@ -1,25 +1,25 @@
 [
   {
     "dates": "October 2023 · Present",
-    "role": "DevOps Cloud Developer Apprentice",
+    "role": "DevOps Cloud Engineer - Apprentice",
     "company": "EDF - Nantes, France",
-    "description": "• Creating and deploying Python applications in AWS cloud using CI/CD tools.",
+    "description": "• Designed and deployed <strong>Python</strong> applications on <strong>AWS</strong> (Lambda, EC2, S3, ECS, DynamoDB) using <strong>GitLab CI/CD</strong> pipelines.\n• Implemented infrastructure as code (<strong>Terraform</strong>) and containerized services (<strong>Docker</strong>) following DevOps best practices.\n• Wrote unit tests and participated in code reviews within an <strong>Agile/Scrum</strong> team.\n• Developing <strong>MCP</strong> (Model Context Protocol) servers to integrate internal tools with AI agents.\n• Building an <strong>AI-powered MVP</strong> using <strong>Generative AI</strong> to improve Product Owners' workflows.",
     "logo": "/assets/images/experiences/edf.ico",
     "link": "https://www.edf.fr"
   },
   {
     "dates": "June 2024 · August 2024",
-    "role": "Full Stack Developer",
+    "role": "Full Stack Engineer - Intern",
     "company": "Leagues.gg - Copenhagen, Denmark",
-    "description": "• Helped in the improvement of the platform and managed different POCs and meetings.",
+    "description": "• Designed and implemented interactive UI components and UX improvements using <strong>SvelteKit</strong> and <strong>TailwindCSS</strong>.\n• Optimized user experience on the esport platform through performance improvements.\n• Led POC evaluations and coordinated stakeholder meetings to align technical solutions with business needs.",
     "logo": "/assets/images/experiences/leagues.ico",
     "link": "https://www.leagues.gg"
   },
   {
     "dates": "June 2022 · July 2022",
-    "role": "Full Stack Developer",
-    "company": "ONI - Arras, France",
-    "description": "• Created a web interface using Django framework and a Power BI report that allows to monitor the evolution of rules defined by the user on a Microsoft SQL Server database.",
+    "role": "Full Stack Engineer - Intern",
+    "company": "Ordre National des Infirmiers - Arras, France",
+    "description": "• Built a web application from scratch in <strong>Python/Django</strong> with database integration (<strong>SQL Server</strong>).\n• Created a <strong>Power BI</strong> dashboard to monitor and visualize rule evolution data.",
     "logo": "/assets/images/experiences/oni.ico",
     "link": "https://www.ordre-infirmiers.fr/"
   }

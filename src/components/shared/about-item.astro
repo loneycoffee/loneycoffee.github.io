@@ -6,7 +6,11 @@ const { logo, dates, title, organization, description, link } = Astro.props;
   <div
     class="absolute top-0 left-0 z-40 flex items-center justify-center -translate-x-1/2 bg-white border rounded-full dark:bg-neutral-950 w-14 h-14 border-neutral-300 dark:border-neutral-700"
   >
-    <img src={logo} alt={organization} class="w-8 h-8" />
+    {logo ? (
+      <img src={logo} alt={organization} class="w-8 h-8" />
+    ) : (
+      <span class="text-xl">🎓</span>
+    )}
   </div>
 
   <p
@@ -16,9 +20,11 @@ const { logo, dates, title, organization, description, link } = Astro.props;
   </p>
   <h3 class="my-1 text-lg font-bold dark:text-neutral-100">{title}</h3>
   <p class="mb-1 text-sm font-medium dark:text-neutral-300">
-    <a href={link} class="hover:underline" target="_blank" rel="noopener noreferrer">{organization}</a>
+    {link ? (
+      <a href={link} class="hover:underline" target="_blank" rel="noopener noreferrer">{organization}</a>
+    ) : (
+      <span>{organization}</span>
+    )}
   </p>
-  <p class="text-sm font-light text-neutral-600 dark:text-neutral-400">
-    {description}
-  </p>
+  <p class="text-sm font-light text-neutral-600 dark:text-neutral-400 whitespace-pre-line" set:html={description} />
 </div>
