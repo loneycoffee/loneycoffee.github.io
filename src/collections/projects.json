@@ -1,6 +1,12 @@
 [
   {
-    "name": "Zed + Devenv.nix = Magic !",
+    "name": "AVATARS (2026)",
+    "description": "Your next emergency robotic solution for emergencies situations.",
+    "image": "/assets/images/projects/AVATARS.png",
+    "url": "https://linktr.ee/avatarsproject"
+  },
+  {
+    "name": "Zed + Devenv.nix = Magic ! (2025)",
     "description": "My config files for a cool dev env.",
     "image": "/assets/images/projects/devenv.png",
     "url": "https://github.com/loneycoffee/zed-nix-cfg"

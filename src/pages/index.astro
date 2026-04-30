@@ -16,10 +16,10 @@ import Layout from "../layouts/main.astro";
           Hello, I'm Théo !
         </h1>
         <p class="mb-2 text-lg font-semibold text-neutral-800 dark:text-neutral-200">
-          I'm a <span id="typewriter" style="color: #7b5ea7;"></span><span class="typewriter-cursor">|</span>
+          I'm <span id="typewriter" style="color: #7b5ea7;"></span><span class="typewriter-cursor"></span>
         </p>
         <p class="mb-6 text-sm text-neutral-600 dark:text-neutral-400">
-          23 y/o French DevOps Engineer with a Full Stack background and a strong interest in Generative AI. Seeking a V.I.E position in Spain or LATAM, starting Q1 2027 ☕
+          23 y/o French MLOps Engineer with a DevOps/Full Stack background and a strong interest in Generative AI. Seeking a V.I.E position in EU or LATAM, starting Q1/Q2 2027 ☕
         </p>
         <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
           I can help you out with:
@@ -27,11 +27,11 @@ import Layout from "../layouts/main.astro";
         <ul
           class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
         >
-          <li>Full Stack Development (Python, JavaScript)</li>
+          <li>Full Stack Development (Python, JavaScript, TypeScript)</li>
           <li>Cloud & Infrastructure (AWS, Terraform, Docker)</li>
           <li>CI/CD Pipelines (GitLab CI)</li>
           <li>Generative AI & MCP</li>
-          <li>SvelteKit · Django</li>
+          <li>Google-ADK · FastAPI · SvelteKit · Django</li>
         </ul>
       </div>
 
@@ -71,13 +71,13 @@ import Layout from "../layouts/main.astro";
   <Projects />
 </Layout>
 
----
-
 <style>
   /* Typewriter cursor blink */
-  .typewriter-cursor {
+.typewriter-cursor {
     display: inline-block;
     width: 2px;
+    height: 1.2em;
+    vertical-align: text-bottom;
     background-color: currentColor;
     margin-left: 1px;
     animation: blink 0.75s step-end infinite;
@@ -113,13 +113,14 @@ import Layout from "../layouts/main.astro";
 
   // Typewriter animation
   const words = [
-    "DevOps Engineer ☁️",
-    "Full Stack Developer 💻",
-    "Generative AI Enthusiast 🤖",
-    "Coffee Lover ☕",
-    "Amateur Chef 🍳",
-    "Traveller ✈️",
-    "Open Source Fan 🛠️",
+    "a DevOps Engineer ☁️",
+    "a MLOps Engineer ☁️",
+    "a Full Stack Engineer 💻",
+    "a Generative AI Enthusiast 🤖",
+    "a Coffee Lover ☕",
+    "an Amateur Chef 🍳",
+    "a Traveller ✈️",
+    "an Open Source Fan 🛠️",
   ];
   const el = document.getElementById("typewriter");
   if (el) {
